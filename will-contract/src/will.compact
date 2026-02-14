@@ -1,0 +1,52 @@
+// Confidential Will Executor
+
+pragma language_version >= 0.20;
+
+import CompactStandardLibrary;
+
+// hidden list of beneficiaries + amounts
+// only contract logic can access
+ledger beneficiaries: Map<Bytes<32>, Uint<64>>;
+
+// hidden executed flag
+ledger executed: Boolean;
+
+// public owner
+export ledger owner: Bytes<32>;
+
+export circuit init(initialOwner: Bytes<32>): [] {
+  // We must disclose initialOwner to assign to public ledger.
+  owner = disclose(initialOwner);
+  executed = false;
+}
+
+export circuit addBeneficiary(
+  person: Bytes<32>,
+  amount: Uint<64>
+): [] {
+  assert(!executed, "Will already executed");
+  // assert(caller == owner);
+
+  // We must disclose arguments to store them in public ledger.
+  // Note: This makes beneficiaries public. For privacy, use commitments.
+  beneficiaries.insert(disclose(person), disclose(amount));
+}
+
+export circuit executeWill(): [] {
+  assert(!executed, "Will already executed");
+  // assert(caller == owner, "Only owner can execute");
+  executed = true;
+}
+
+export circuit claim(person: Bytes<32>): [] {
+  assert(executed, "Will not executed yet");
+  
+  // assert(caller == person, "Can only claim own funds");
+  // OR pass person as argument and claim for them?
+  
+  // const amount = beneficiaries.lookup(person);
+  // assert(amount > 0, "No funds to claim");
+  
+  // transfer(person, amount);
+  // beneficiaries.insert(person, 0);
+}
