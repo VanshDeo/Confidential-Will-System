@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "file": "index.js",
+  "sourceRoot": "../../../../",
+  "sources": ["src/will.compact"],
+  "names": [],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAEA;;;;;;;;;;MAcA,AAAA,IAIC;;;;;cAJmB,cAAuB;;;;;;;;;;;;;;;;;;yCAAvB,cAAuB;;;;;;;iEAAvB,cAAuB;;;OAI1C;MAED,AAAA,cAUC;;;;;cATC,QAAiB;cACjB,QAAgB;;;;;;;;;;;;;;;;;;;;;;;;;yCADhB,QAAiB,+BACjB,QAAgB;;;;;;;;;gDADhB,QAAiB;gDACjB,QAAgB;;;OAQjB;MAED,AAAA,WAIC;;;;;;;;;;;;;;;;;;;;;;OAAA;MAED,AAAA,KAWC;;;;;cAXoB,QAAiB;;;;;;;;;;;;;;;;;;yCAAjB,QAAiB;;;;;;;kEAAjB,QAAiB;;;OAWrC;;;;;;;;GACA;EAlDD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAMA;;;;;;;;;;yEAA+C;IAG/C;;;;;;;;;yEAAyB;IAGzB;;;;;;;;;yEAA+B;;;;;;;GAsC9B;EApCD,AAAA,OAIC,4BAJmB,cAAuB;IAEzC;;;;;;;2HAAiB,cAAY;;yEAAxB;IACL;;;;;;;;;yEAAQ;;GACT;EAED,AAAA,iBAUC,4BATC,QAAiB,EACjB,QAAgB;qDAER;;;;;;;;;;;0HAAQ;;IAKhB;;;;;;;;;;2HAA8B,QAAM;;;2HAAY,QAAM;;;wEAAzC;;GACd;EAED,AAAA,cAIC;qDAHS;;;;;;;;;;;0HAAQ;;IAEhB;;;;;;;;;yEAAQ;;GACT;EAED,AAAA,QAWC,4BAXoB,QAAiB;oDAC7B;;;;;;;;;;;yHAAQ;;;GAUhB;;;;;;;;;;;;;;;;IArCD;qCAAA;;;;;;;;;;;0GAA+B;KAAA;;;;;;;;;;"
+}
