@@ -38,15 +38,35 @@ This dApp allows users to:
 - **📱 Responsive Design**: Works seamlessly on desktop and mobile devices.
 - **🔗 Wallet Integration**: Seamless connection with Lace wallet for transaction signing.
 
-## 📸 Screenshots
+- **� Wallet Integration**: Seamless connection with Lace wallet for transaction signing.
 
-| Dashboard & Wallet Connection | Contract Interaction |
-| :---: | :---: |
-| ![Dashboard](dashboard-images/Screenshot%202026-02-15%20at%207.05.35%E2%80%AFPM.png) | ![Join Contract](dashboard-images/Screenshot%202026-02-15%20at%207.06.56%E2%80%AFPM.png) |
-| **Adding Beneficiaries** | **Private State Management** |
-| ![Add Beneficiary](dashboard-images/Screenshot%202026-02-15%20at%207.07.26%E2%80%AFPM.png) | ![Private State](dashboard-images/Screenshot%202026-02-15%20at%207.07.29%E2%80%AFPM.png) |
-| **Will Execution** | **Claiming Inheritance** |
-| ![Execute Will](dashboard-images/Screenshot%202026-02-15%20at%207.10.48%E2%80%AFPM.png) | ![Claim Funds](dashboard-images/Screenshot%202026-02-15%20at%207.12.07%E2%80%AFPM.png) |
+## 📱 User Walkthrough
+
+Experience the full privacy-preserving flow of creating and executing a digital will.
+
+### 1. Dashboard & Wallet Connection
+Connect your Lace wallet to access the secure dashboard. This is your command center for managing your digital estate.
+![Dashboard](dashboard-images/Screenshot%202026-02-15%20at%207.05.35%E2%80%AFPM.png)
+
+### 2. Join the Contract
+Join the deployed smart contract to start interacting with it. This establishes your secure connection to the Midnight network.
+![Join Contract](dashboard-images/Screenshot%202026-02-15%20at%207.06.56%E2%80%AFPM.png)
+
+### 3. Private State Initialization
+Your private data is securely initialized locally. Beneficiary information is encrypted and stored in your browser's private state, not on the public blockchain.
+![Private State](dashboard-images/Screenshot%202026-02-15%20at%207.07.29%E2%80%AFPM.png)
+
+### 4. Add Beneficiaries Privately
+Add friends and family as beneficiaries. Their identities and the amounts they are set to receive are **fully encrypted** and visible only to you until execution.
+![Add Beneficiary](dashboard-images/Screenshot%202026-02-15%20at%207.07.26%E2%80%AFPM.png)
+
+### 5. Execute the Will
+When the time is right, the owner can mark the will as "Executed". This is a public state change that unlocks the ability for beneficiaries to claim their funds.
+![Execute Will](dashboard-images/Screenshot%202026-02-15%20at%207.10.48%E2%80%AFPM.png)
+
+### 6. Claim Inheritance
+Once executed, beneficiaries can verify their allocation using zero-knowledge proofs and withdraw their funds securely.
+![Claim Funds](dashboard-images/Screenshot%202026-02-15%20at%207.12.07%E2%80%AFPM.png)
 
 ## 🚀 Deployed Smart Contract
 
