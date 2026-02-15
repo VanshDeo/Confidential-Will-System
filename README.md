@@ -38,6 +38,16 @@ This dApp allows users to:
 - **📱 Responsive Design**: Works seamlessly on desktop and mobile devices.
 - **🔗 Wallet Integration**: Seamless connection with Lace wallet for transaction signing.
 
+## 📸 Screenshots
+
+| Dashboard & Wallet Connection | Contract Interaction |
+| :---: | :---: |
+| ![Dashboard](dashboard-images/Screenshot%202026-02-15%20at%207.05.35%E2%80%AFPM.png) | ![Join Contract](dashboard-images/Screenshot%202026-02-15%20at%207.06.56%E2%80%AFPM.png) |
+| **Adding Beneficiaries** | **Private State Management** |
+| ![Add Beneficiary](dashboard-images/Screenshot%202026-02-15%20at%207.07.26%E2%80%AFPM.png) | ![Private State](dashboard-images/Screenshot%202026-02-15%20at%207.07.29%E2%80%AFPM.png) |
+| **Will Execution** | **Claiming Inheritance** |
+| ![Execute Will](dashboard-images/Screenshot%202026-02-15%20at%207.10.48%E2%80%AFPM.png) | ![Claim Funds](dashboard-images/Screenshot%202026-02-15%20at%207.12.07%E2%80%AFPM.png) |
+
 ## 🚀 Deployed Smart Contract
 
 The `will-contract` has been deployed to the local development network.
