@@ -54,11 +54,11 @@ Join the deployed smart contract to start interacting with it. This establishes 
 
 ### 3. Private State Initialization
 Your private data is securely initialized locally. Beneficiary information is encrypted and stored in your browser's private state, not on the public blockchain.
-![Private State](dashboard-images/Screenshot%202026-02-15%20at%207.07.29%E2%80%AFPM.png)
+![Private State](dashboard-images/Screenshot%202026-02-15%20at%207.07.26%E2%80%AFPM.png)
 
 ### 4. Add Beneficiaries Privately
 Add friends and family as beneficiaries. Their identities and the amounts they are set to receive are **fully encrypted** and visible only to you until execution.
-![Add Beneficiary](dashboard-images/Screenshot%202026-02-15%20at%207.07.26%E2%80%AFPM.png)
+![Add Beneficiary](dashboard-images/Screenshot%202026-02-15%20at%207.07.29%E2%80%AFPM.png)
 
 ### 5. Execute the Will
 When the time is right, the owner can mark the will as "Executed". This is a public state change that unlocks the ability for beneficiaries to claim their funds.
