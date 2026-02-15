@@ -12,10 +12,8 @@
   },
   "scripts": {
     "compile": "compact compile src/will.compact src/managed/will",
-    "compile:voting": "compact compile src/voting.compact src/managed/voting",
     "build": "rm -rf dist && tsc && cp -R src/managed dist/managed",
-    "deploy": "node dist/deploy.js",
-    "deploy:voting": "node dist/deploy-voting.js"
+    "deploy": "node dist/deploy.js"
   },
   "dependencies": {
     "@midnight-ntwrk/compact-js": "2.4.0",
