@@ -7,9 +7,9 @@ export interface Deployment {
 // We can load this dynamically if we copy deployment.json to public/
 // For now, let's hardcode the one we just deployed or implementing a fetch
 export const currentDeployment: Deployment = {
-  contractAddress: '2a7275cd74ca516b6227011b0907b77677c31351d102ee62ace4383ab1a60365', // Updated from deployment.json
+  contractAddress: '947c7e89e70eb40b42fe312d6a877d5537d7c9bf087364304d6d564e3ea6f6b4', // Updated from deployment.json
   network: 'undeployed',
-  deployedAt: '2026-02-15T12:41:30.854Z'
+  deployedAt: '2026-02-16T13:19:00.000Z'
 };
 
 export const CONTRACT_ADDRESS = currentDeployment.contractAddress;

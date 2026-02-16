@@ -76,12 +76,27 @@ export class ContractController implements ContractControllerInterface {
     const contractAddress = CONTRACT_ADDRESS;
     logger.info(`Joining contract at ${contractAddress}`);
 
-    const deployedContract = await findDeployedContract(providers, {
+    // Add a timeout so the UI doesn't hang forever if the contract doesn't exist on the network
+    const TIMEOUT_MS = 30_000;
+    const timeoutPromise = new Promise<never>((_, reject) =>
+      setTimeout(
+        () => reject(new Error(
+          `Timed out after ${TIMEOUT_MS / 1000}s trying to join contract at ${contractAddress}. ` +
+          `This usually means the contract has not been deployed to the current network. ` +
+          `Please redeploy: cd will-contract && npm run deploy`
+        )),
+        TIMEOUT_MS,
+      ),
+    );
+
+    const joinPromise = findDeployedContract(providers, {
       contractAddress,
       compiledContract: willCompiledContract,
       privateStateId: WillPrivateStateId,
       initialPrivateState: { beneficiaries: {}, executed: false },
     });
+
+    const deployedContract = await Promise.race([joinPromise, timeoutPromise]);
 
     return new ContractController(deployedContract, providers, logger);
   }
